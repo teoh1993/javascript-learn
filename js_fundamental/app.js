@@ -1,10 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
-  console.log('1xxx1zz');
 
+app.get('/', function (req, res) {
   res.send('Hello World');
 })
 
 app.listen(3000);
+
+
+// require('./lang.js');
+require('./operators.js');
