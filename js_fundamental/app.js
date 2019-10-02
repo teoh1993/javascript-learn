@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 app.listen(3000);
 
 
-// require('./lang.js');
+require('./lang.js');
 require('./operators.js');
