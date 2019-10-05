@@ -1,5 +1,3 @@
-console.log('func_scope');
-
 /// function scope
  function startCar(carId){
    let message = 'Starting';
