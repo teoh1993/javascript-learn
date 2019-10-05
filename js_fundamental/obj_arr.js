@@ -36,3 +36,49 @@ String.prototype.hello = function(){
 console.log('foo '.hello());
 
 // ############ JSON - JS Object Notation ############
+let text1 = {
+  id : 123,
+  style : 'convertible'
+};
+let text2 = [
+  {carId:123,color:'red'},
+  {carId:456,color:'blue'}
+];
+console.log(text1);
+console.log(JSON.stringify(text1));
+console.log(JSON.stringify(text2));
+
+let jsonIn =
+`
+[
+  {"carId":123,"color":"red"},
+  {"carId":456,"color":"blue"}
+]
+`;
+let json = JSON.parse(jsonIn);
+console.log(json);
+
+// ############ array iteration ############
+let arr = [
+  {carId:233,color:'white'},
+  {carId:123,color:'red'},
+  {carId:456,color:'blue'},
+  {carId:789,color:'pink'}
+];
+arr.forEach(car => console.log(car));
+arr.forEach((car,index) => console.log(car,index));
+
+let blue = arr.filter(
+  car => car.color === 'blue'
+);
+console.log(blue);
+
+let res = arr.every(
+  car => car.carId > 400
+);
+console.log(res);
+
+let res1 = arr.find(
+  car => car.carId > 100
+);
+console.log(res1);
