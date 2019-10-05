@@ -1,4 +1,4 @@
-/// function scope
+/// ############ function scope ############
  function startCar(carId){
    let message = 'Starting';
    let startFn = function turnKey(){
@@ -11,7 +11,7 @@
 
  startCar(123);
 
-// block scope
+// ############ block scope ############
 let message1 = 'Outside';
 if (5===5) {
   let message1 = 'Equal';
@@ -21,7 +21,7 @@ if (5===5) {
 console.log(message1);
 console.log(message2);
 
-// IIFE's
+// ############ IIFE's ############
 function lol(){
   console.log('in function');
 }
@@ -39,7 +39,7 @@ let app = (function(){
 
 console.log(app);
 
-// closures
+// ############ closures ############
 let app1 = (function(){
   let carId1 = 123;
   let getId = function(){
@@ -53,7 +53,7 @@ let app1 = (function(){
 console.log(app1.getId());
 console.log(app1);
 
-// this keyword
+// ############ this keyword ############
 console.log("\n")
 let fn = function(){
   // console.log(this === window);
@@ -73,7 +73,7 @@ console.log(o.getId());
 
 
 
-// call and apply
+// ############ call and apply ############
 console.log("\n\n")
 
 var a = {
@@ -98,7 +98,7 @@ console.log(b.getId.apply(carIIdx,['ID:','is']) );
 console.log(typeof(['ID:']));
 
 
-// bind
+// ############ bind ############
 let c = {
   carId: 123,
   getId: function(){
@@ -110,7 +110,7 @@ let newFn = c.getId.bind(carid11);
 console.log(newFn());
 
 
-// arrow Function
+// ############ arrow Function ############
 let getArrow = () => 123;
 console.log(getArrow());
 
@@ -128,7 +128,7 @@ console.log(getArrow3('ID:','!!!'));
 let getArrow4 = _ => 123;
 console.log(getArrow4());
 
-// default parameter
+// ############ default parameter ############
 let trackCar = function(carId,city='NY'){
   console.log(`Tracking ${carId} in ${city}`);
 };

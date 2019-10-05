@@ -1,4 +1,4 @@
-/* #### equality
+/* ############ equality ############
 if (var1 == var2) {}
 if (var1 === var2) {}
 if (var1 != var2) {}
@@ -13,7 +13,7 @@ console.log(id==='123');
 console.log(id!='123');
 console.log(id!=='123');
 
-/* #### unary
+/* ############ unary ############
 ++var;
 var++;
 --var;
@@ -29,7 +29,7 @@ let year = "100";
 console.log(typeof(-year));
 console.log(-year);
 
-/* logical
+/* ############ logical ############
 &&
 ||
 && > ||
@@ -53,7 +53,7 @@ console.log(!true);
 let car = null;
 console.log(!car);
 
-/* relational
+/* ############ relational ############
 >
 <
 >=
@@ -75,7 +75,7 @@ if (s1.toUpperCase() < s2.toUpperCase()) {
   console.log(false);
 }
 
-/* conditional
+/* ############ conditional ############
 = () ? : ;
 */
 
@@ -83,7 +83,7 @@ var result = (6 > 5) ? true : false;
 console.log((6 > 5) ? true : false);
 console.log(4 > 5 ? true : false);
 
-/* assignment
+/* ############ assignment ############
 +=
 -=
 /=
@@ -104,5 +104,4 @@ va8 >>>= 1;
 
 console.log('va1='+va1+' - '+'va2='+va2+' - '+'va3='+va3+' - '+'va4='+va4+' - '+'va5='+va5+' - '+'va6='+va6+' - '+'va7='+va7+' - '+'va8='+va8);
 
-/* operator precedence
-*/
+/* ############ operator precedence ############ */

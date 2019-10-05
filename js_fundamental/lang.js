@@ -1,10 +1,10 @@
-// #### rest parameter
+// ############ rest parameter ############
 test('Mon',1,2,3,4);
 function test(day, ...all){
   all.forEach(id => console.log(id));
 }
 
-// #### destructuring arrays
+// ############ destructuring arrays ############
 let carIds = [1,2,5];
 let [car1,car2,car3] = carIds;
 console.log(car1,car2,car3);
@@ -24,7 +24,7 @@ let carr1,carr2,theRest;
 [, carr2, ...theRest] = carIdd;
 console.log(carr1,carr2,theRest);
 
-// #### destructuring object
+// ############ destructuring object ############
 let options = {title: "Menu",width: 100,height: 200};
 let {title, width, height} = options;
 console.log(title);  // Menu
@@ -36,7 +36,7 @@ let idx,stylex;
 ({id,style} = carObj);
 console.log(id,style);
 
-// #### spread syntax
+// ############ spread syntax ############
 let arr = [100,300,500];
 test1(...arr);
 function test1(case1,case2,case3){
@@ -55,7 +55,7 @@ function test3(case1,case2,case3, ...rest){
   console.log(rest);
 };
 
-// #### typeof()
+// ############ typeof() ############
 console.log(typeof(1));
 console.log(typeof(true));
 console.log(typeof('Hello'));
@@ -65,13 +65,13 @@ console.log(typeof(null));
 console.log(typeof(undefined));
 console.log(typeof(NaN));
 
-// #### common type conversion
+// ############ common type conversion ############
 let foo = 'foo';
 console.log(foo.toString());
 console.log(Number.parseInt('55ABC'));
 console.log(Number.parseFloat('55.99wer'));
 
-// #### controlling loops
+// ############ controlling loops ############
 let i=0;
 
 for (; i < 12; i++) {
