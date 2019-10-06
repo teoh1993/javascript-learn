@@ -10,8 +10,8 @@ const router = express.Router();
 // require('./func_scope.js');
 // require('./obj_arr.js');
 // require('./class_module.js');
-require('./prog_BOM_DOM.js');
-
+// require('./prog_BOM_DOM.js');
+require('./promises_errhandling.js');
 
 
 
@@ -22,18 +22,13 @@ app.get('/', function (req, res) {
 
 
 
-// add the router
-app.use(express.static(__dirname + '/view'));
-// Store all HTML files in view folder.
-app.use(express.static(__dirname + '/script'));
-// Store all JS and CSS in Scripts folder.
 
 app.listen(3000);
 
 
 
 // ################################################################################################
-console.log(path.join(__dirname));
+console.log("\n\n"+path.join(__dirname));
 
 
 

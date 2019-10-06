@@ -2,7 +2,7 @@
 <html lang='en'>
     <head>
         <meta charset="UTF-8">
-        <title>JavaScript Fundamentals</title>
+        <title>JS Fundamentals</title>
         <!-- <link href="../node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet"> -->
     </head>
     <body>
@@ -11,6 +11,7 @@
         <p id="first" class="p1">First Paragraph</p>
         <p name="name1" class="p1">Second Paragraph</p>
         <p class="p3">Third Paragraph</p>
+        <p id='elementId'></p>
 
         <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
 
@@ -47,6 +48,13 @@
 
           let elll = document.getElementsByTagName('p');
           console.log(elll);
+
+          // modifying DOM elements
+          let element = document.getElementById('elementId');
+          element.textContent = 'testing';
+          element.setAttribute('name','nameValue');
+          element.classList.add('myClassName');
+          element.style.color = 'blue';
 
 
 
