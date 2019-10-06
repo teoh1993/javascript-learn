@@ -6,6 +6,8 @@ const Window = require('window');
 const window = new Window();
 console.log(window.innerWidth);
 
+
+
 // ########## timers ##########
 // setTimeout(function, milliseconds)
 // ---- Executes a function, after waiting a specified number of milliseconds.
@@ -31,3 +33,6 @@ function testing(){
 }
 let haha = setInterval(testing, 1000);
 clearInterval(haha);
+
+// ########## location object ##########
+// console.log(location.href);

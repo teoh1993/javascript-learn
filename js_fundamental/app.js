@@ -4,15 +4,23 @@ const path = require('path');
 const router = express.Router();
 
 
+
+// require('./lang.js');
+// require('./operators.js');
+// require('./func_scope.js');
+// require('./obj_arr.js');
+// require('./class_module.js');
+require('./prog_BOM_DOM.js');
+
+
+
+
 app.get('/', function (req, res) {
   // res.send('Hello World');
   res.sendFile(path.join(__dirname+'/html/index.html'));
 })
 
-app.get('/test/', function (req, res) {
-  // res.send('Hello World');
-  res.sendFile(path.join(__dirname+'/html/index.html'));
-})
+
 
 // add the router
 app.use(express.static(__dirname + '/view'));
@@ -21,14 +29,6 @@ app.use(express.static(__dirname + '/script'));
 // Store all JS and CSS in Scripts folder.
 
 app.listen(3000);
-
-
-// require('./lang.js');
-// require('./operators.js');
-// require('./func_scope.js');
-// require('./obj_arr.js');
-// require('./class_module.js');
-require('./prog_BOM_DOM.js');
 
 
 
