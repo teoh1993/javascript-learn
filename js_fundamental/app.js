@@ -1,10 +1,24 @@
 const express = require('express');
 const app = express();
+const path = require('path');
+const router = express.Router();
 
 
 app.get('/', function (req, res) {
-  res.send('Hello World');
+  // res.send('Hello World');
+  res.sendFile(path.join(__dirname+'/html/index.html'));
 })
+
+app.get('/test/', function (req, res) {
+  // res.send('Hello World');
+  res.sendFile(path.join(__dirname+'/html/index.html'));
+})
+
+// add the router
+app.use(express.static(__dirname + '/view'));
+// Store all HTML files in view folder.
+app.use(express.static(__dirname + '/script'));
+// Store all JS and CSS in Scripts folder.
 
 app.listen(3000);
 
@@ -15,3 +29,19 @@ app.listen(3000);
 // require('./obj_arr.js');
 // require('./class_module.js');
 require('./prog_BOM_DOM.js');
+
+
+
+// ################################################################################################
+console.log(path.join(__dirname));
+
+
+
+var start = new Date()
+var simulateTime = 1000
+
+setTimeout(function(argument) {
+  // execution time simulated with setTimeout function
+  var end = new Date() - start
+  console.info('Execution time: %dms', end)
+}, simulateTime)
