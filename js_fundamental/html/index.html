@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>JS Fundamentals</title>
         <!-- <link href="../node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet"> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     </head>
     <body>
         <p id="index">Index html - Hello World!</p>
@@ -55,6 +58,31 @@
           element.setAttribute('name','nameValue');
           element.classList.add('myClassName');
           element.style.color = 'blue';
+
+        </script>
+        <script>
+
+        (function () {
+            var $ = this.jQuery;
+            let user = {
+              name: "Delbert Murray",
+              avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/muridrahhal/128.jpg"
+            };
+            let promise = $.post("https://5d99ad5e5641430014051a68.mockapi.io/users");
+            promise.then(
+              value => console.log('fullfilled : '+ value),
+              error => console.log('rejected : '+error)
+            );
+        }());
+
+        console.log("\n\n");
+
+
+        (function () {
+            var $ = this.jQuery;
+            $.get("https://5d99ad5e5641430014051a68.mockapi.io/users",data=>console.log('data : ',data));
+        }());
+
 
 
 

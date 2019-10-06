@@ -12,14 +12,18 @@
   "dependencies": {
     "ajax": "0.0.4",
     "bootstrap": "^4.3.1",
+    "browserify": "^16.5.0",
     "connect": "^3.7.0",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
     "lodash": "^4.17.15",
     "nodemon": "^1.19.3",
     "promise": "^8.0.3",
+    "requirejs": "^2.3.6",
     "serve-static": "^1.14.1",
-    "window": "^4.2.6"
+    "window": "^4.2.6",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {}
 }
