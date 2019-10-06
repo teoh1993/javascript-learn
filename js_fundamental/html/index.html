@@ -6,10 +6,12 @@
         <!-- <link href="../node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet"> -->
     </head>
     <body>
-        <p id="para">Index html - Hello World!</p>
+        <p id="index">Index html - Hello World!</p>
+
         <p id="first" class="p1">First Paragraph</p>
         <p name="name1" class="p1">Second Paragraph</p>
         <p class="p3">Third Paragraph</p>
+
         <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
 
 
@@ -35,10 +37,16 @@
 
           // selecting DOM elements
           // document.getElementById('elementId');
-          // document.getElementByClassName('className');
-          // document.getElementByTagName('tagName');
+          // document.getElementsByClassName('className');
+          // document.getElementsByTagName('tagName');
+          let el = document.getElementById('first');
+          console.log(el);
 
+          let ell = document.getElementsByClassName('p1');
+          console.log(ell);
 
+          let elll = document.getElementsByTagName('p');
+          console.log(elll);
 
 
 
