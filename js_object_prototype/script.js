@@ -1,5 +1,8 @@
 'use strict'; //throw error
 
+display('Hello World');
+
+
 var cat = {
   name:'fluffy',
   color:'white',
@@ -15,14 +18,18 @@ cat.speak();
 
 
 
-//function Cat(name, color ) {
-//  this.name = name
-//  this.color = color
-//}
+function Cat1(name, color ) {
+ this.name = name
+ this.color = color
+}
 
-//var cat = new Cat('Fluffy', 'White');
+var cat1 = new Cat1('Fluffy', 'White');
+display(cat1);
+console.log(typeof(cat1)); //object
 
-display('Hello World');
+
+
+
 
 class Cat {
   constructor(name, color) {
