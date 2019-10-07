@@ -30,7 +30,6 @@ console.log(typeof(cat1)); //object
 
 
 
-
 class Cat {
   constructor(name, color) {
     this.name = name
@@ -46,3 +45,26 @@ var cat = new Cat('Fluffy', 'White')
 
 display(cat)
 cat.speak()
+
+
+
+
+var catObj = Object.create(Object.prototype,{
+  name:{
+    value:'Fluffy',
+    enumerable:true,
+    writable:true,
+    configurable:true
+  },
+  color:{
+    value:'White',
+    enumerable:true,
+    writable:true,
+    configurable:true
+  }
+});
+display(catObj);
+
+
+// display(this);
+// display(window);
